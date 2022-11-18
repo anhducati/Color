@@ -1,5 +1,23 @@
 /*Just fancy stuff!!*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+img{
+  max-width: 100%;
+}
+body {
+  color: #5c0707;
+  font-size: 14px;
+  font-family: 'Roboto Mono', cursive;
+  line-height: 1.6;
+}
+
+html, body{
+height: 100%;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -8,10 +26,27 @@ body {
   }
   
   h1 {
-    font-size: 3.6rem;
-    color: black;
-    font-family: "Berkshire Swash", cursive;
+   
+    position: relative;
+    background: linear-gradient(90deg,#6667AB,#86af49,#fb8b23,#a0d8e5,#ffc0bb ,#cd2e56,#00508b,#ffb755,#6c96af,#005a62,#7c5f4f,#813a76,#d52d24,#cfc1b6,#57585c);
     text-align: center;
+    background-size: 400%;
+    font-size: 70px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 11s linear infinite;
+
+  }
+  @keyframes animate {
+      0%{
+         background-position: 0%;
+      }
+      100%{
+        background-position: 188%;
+      }
   }
   
   input[type="color"] {
@@ -33,7 +68,7 @@ body {
   
   code {
     font-size: 1.2rem;
-    background-color: lightslategray;
+    background-color: #6667AB;
     color: #fff;
     border-radius: 3px;
     padding: 5px;
